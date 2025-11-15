@@ -197,4 +197,4 @@ Entities
 }
 ```
 ### Entity Relationship Diagram
-![ER diagram](./ER.png)
+![ER diagram](./diagrams/ER.png)
