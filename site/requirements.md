@@ -1,4 +1,23 @@
-You are an expert full stack engineer who are going to assist me to build a learning platform where users can do some functionalities
+# 1. Overall System Description
+
+The platform is a web-based learning environment where users can discover, follow, and create structured learning content. It serves three types of users: visitors, learners, and administrators and provides a unified place to explore materials, track learning progress, and publish user-generated content.
+
+The system is built around two core content types:
+
+- **Learning Resources**: individual items such as courses, books, articles, projects, and videos.  
+- **Learning Tracks**: curated learning paths that combine multiple resources into organized levels.
+
+Users can browse all published content, enroll in tracks or resources, and maintain a personalized space through **My Learnings** and **Accomplishments**. A review system allows learners to rate and comment on content, helping others evaluate its quality.
+
+Registered users can contribute new learning resources and tracks. They have full control over drafts, while publishing and deletion follow an admin approval workflow to maintain platform quality. Both creators and administrators receive notifications when content moves between states (draft, review, published/review).
+
+Administrators review user submissions, handle deletion requests, and moderate reviews when necessary. They do not modify or override user-created content; their role is solely to ensure that public content meets the platform’s quality and relevance standards.
+
+The platform supports skill tagging, search, filtering, and content sharing, enabling users to quickly find material aligned with their learning goals. A structured skill model connects resources and tracks to clear learning outcomes, improving content discovery and guidance.
+
+In essence, the system enables users to learn, contribute, and navigate knowledge through organized, user-driven content supported by lightweight moderation and progress tracking.
+
+
 
 Roles
 -----
@@ -27,9 +46,10 @@ Roles
 
 * Admin
     * An Admin has all Registered User capabilities, plus:
-        * Approve or reject newly created user content
-        * Approve or reject user delete requests
-        * Create, edit, and delete predefined learning tracks
+        * Review user-submitted content and either approve it or request changes.
+        * Review user delete requests and either approve, reject, or ask the content owner for clarification.
+        * Create, edit, and delete their own learning content without approval.
+        * Request modifications from content owners when quality or policy issues are found.
 
 Concepts
 --------
@@ -176,3 +196,5 @@ Entities
     "message": "text (optional)"
 }
 ```
+### Entity Relationship Diagram
+![ER diagram](./ER.png)
