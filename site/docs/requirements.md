@@ -7,7 +7,7 @@ The system is built around two core content types:
 - **Learning Resources**: individual items such as courses, books, articles, projects, and videos.  
 - **Learning Tracks**: curated learning paths that combine multiple resources into organized levels.
 
-Users can browse all published content, enroll in tracks or resources, and maintain a personalized space through **My Learnings** and **Accomplishments**. A review system allows learners to rate and comment on content, helping others evaluate its quality.
+Users can browse all published content, enroll in tracks or resources, and maintain a personalized space through **My Learnings**. A review system allows learners to rate and comment on content, helping others evaluate its quality.
 
 Registered users can contribute new learning resources and tracks. They have full control over drafts, while publishing and deletion follow an admin approval workflow to maintain platform quality. Both creators and administrators receive notifications when content moves between states (draft, review, published/review).
 
